@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D280 Interactive World Map</title>
+</head>
+
+<body>
+  <table>
+    <th>
+      <h1>World Map</h1>
+    </th>
+    <th>
+      <h2>Country Stats</h2>
+    </th>
+    <tr>
+      <td id="world-cell">
+        <app-map></app-map>
+      </td>
+      <td>
+        <ol>
+          <li>Country: <span>{{ countryName }}</span></li>
+          <li>Country Capital: <span>{{ countryCap }} </span></li>
+          <li>Country Income: <span>{{ countryIncome }}</span></li>
+          <li>Country Region: <span>{{ countryRegion }}</span></li>
+          <li>Country Latitude: <span>{{ countryLat }}</span></li>
+          <li>Country Longitude: <span>{{ countryLong }}</span></li>
+        </ol>
+      </td>
+    </tr>
+  
+</table>
+  <div>
+    <p>
+      API
+        <a
+            href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures">WorldBank.com
+        </a>
+    </p>
+  </div>
+</body>
+</html>
